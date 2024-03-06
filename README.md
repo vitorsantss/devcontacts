@@ -28,13 +28,12 @@ npm install
 
 ```bash
 npx prisma migrate dev
-
-3. Adicione uma secret key ao arquivo `.env`:
+```
+4. Adicione uma secret key ao arquivo `.env`:
 
 ```plaintext
 SECRET_KEY=SuaSecretKeyAqui
 ```
-
 
 Isso criará ou atualizará o esquema do banco de dados de acordo com as definições em `schema.prisma`.
 
