@@ -35,7 +35,7 @@ npx prisma migrate dev
 SECRET_KEY=SuaSecretKeyAqui
 ```
 
-Isso criará ou atualizará o esquema do banco de dados de acordo com as definições em `schema.prisma`.
+Isso criará o esquema do banco de dados de acordo com as definições em `schema.prisma`.
 
 5. Inicie o servidor Node.js:
 
