@@ -200,9 +200,7 @@ const EditContact = ({ contact }) => {
                   Excluir
                 </Button>
               </SheetClose>
-              <SheetClose asChild>
               <Button type="submit">Salvar</Button>
-              </SheetClose>
             </SheetFooter>
           </form>
         </SheetContent>

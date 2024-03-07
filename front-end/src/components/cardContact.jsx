@@ -43,9 +43,9 @@ const CardContact = ({ contact }) => {
               <Avatar className="text-lg">
                 <AvatarImage
                   src={
-                    contact.github
-                      ? `https:\\github.com/${contact.github}.png`
-                      : ""
+                    contact.github && contact.github !== " "
+                      ? `https://github.com/${contact.github}.png`
+                      : null
                   }
                 />
                 <AvatarFallback>
@@ -77,7 +77,7 @@ const CardContact = ({ contact }) => {
               <IoLogoWhatsapp size={25} />
             </Link>
 
-            {contact.github ? (
+            {contact.github && contact.github !== " " ? (
               <Link
                 target="_blank"
                 reloadDocument

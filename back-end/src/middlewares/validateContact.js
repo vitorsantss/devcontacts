@@ -9,7 +9,7 @@ class ValidateContact {
         const contactSchema = object().shape({
             name: string().required('Nome do contato é obrigatório.'),
             email: string().email('Por favor, insira um endereço de e-mail válido.').required('E-mail é obrigatório.'),
-            phone: string().matches(/^[1-9]{2}(?:[2-8]|9[0-9])[0-9]{3}[0-9]{4}$/, 'Por favor, insira um número de telefone válido. O formato aceito é (xx) xxxxx-xxxx ou xx xxxxx xxxx').required('Número de telefone é obrigatório.'),
+            phone: string().matches(/^[1-9]{2}(?:[2-8]|9[0-9])[0-9]{3}[0-9]{4}$/, 'Por favor, insira um número de telefone válido. O formato aceito é (xx) xxxxx-xxxx').required('Número de telefone é obrigatório.'),
             position: string(),
             github: string()
         });

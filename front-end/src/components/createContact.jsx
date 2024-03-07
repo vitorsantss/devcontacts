@@ -138,10 +138,11 @@ const CreateContact = () => {
                 </Label>
                 <Input
                   required
+                  type="number"
                   id="telefone"
                   name="telefone"
                   value={telefone}
-                  className="col-span-3"
+                  className="col-span-3 appearance-none"
                   placeholder="(99) 99999-9999"
                   onChange={(e) => setTelefone(e.target.value)}
                 />
@@ -176,9 +177,13 @@ const CreateContact = () => {
               </div>
             </div>
             <SheetFooter>
-            <SheetClose asChild>
+              <SheetClose asChild>
+                <Button
+                  variant="outline">
+                  Voltar
+                </Button>
+              </SheetClose>
               <Button type="submit">Salvar</Button>
-            </SheetClose>
             </SheetFooter>
           </form>
         </SheetContent>
