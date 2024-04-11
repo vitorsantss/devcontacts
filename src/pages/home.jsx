@@ -6,7 +6,7 @@ import { useState } from "react";
 const Home = () => {
   
   return (
-    <div className="min-h-[81vh] flex flex-col">
+    <div className="min-h-[80vh] flex flex-col">
       <Gallery />
     </div>
   );
