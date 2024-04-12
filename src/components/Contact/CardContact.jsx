@@ -70,27 +70,30 @@ const CardContact = ({ contact }) => {
         </CardHeader>
         <CardContent className="flex flex-row items-center justify-between">
           <div className="flex flex-row gap-2">
-            <Link
+            <a
+              rel="noopener noreferrer"
               target="_blank"
-              reloadDocument
-              to={`https:\\wa.me/55${contact.telefone}`}>
+              href={`https:\\wa.me/55${contact.telefone}`}>
               <IoLogoWhatsapp size={25} />
-            </Link>
+            </a>
 
             {contact.github && contact.github !== " " ? (
-              <Link
+              <a
+                rel="noopener noreferrer"
                 target="_blank"
-                reloadDocument
-                to={`https:\\github.com/${contact.github}`}>
+                href={`https:\\github.com/${contact.github}`}>
                 <FaGithub size={25} />
-              </Link>
+              </a>
             ) : (
               ""
             )}
 
-            <Link target="_blank" reloadDocument to={`mailto:${contact.email}`}>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={`mailto:${contact.email}`}>
               <MdEmail size={25} />
-            </Link>
+            </a>
           </div>
           <EditContact contact={contact} />
         </CardContent>
