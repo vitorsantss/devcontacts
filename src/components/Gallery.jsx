@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { ContactContext } from "@/contexts/ContactContext";
 import CardContact from "./Contact/CardContact";
-import CreateContact from "./Contact/CreateContact";
 import ilustracao from "/ilustracao.png";
 import { useContext } from "react";
 
@@ -12,9 +11,6 @@ const Gallery = () => {
     return (
       <div className="flex flex-grow justify-center items-center text-3xl font-bold flex-col gap-3">
 
-        <div className="w-full p-2 mb-5 flex justify-end">
-          <CreateContact />
-        </div>
         
         <div className="flex justify-center flex-row flex-wrap gap-8">
           {contacts.length !== 0 ? (

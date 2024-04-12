@@ -167,7 +167,7 @@ const EditContact = ({ contact }) => {
                 />
               </div>
             </div>
-            <SheetFooter>
+            <SheetFooter className="flex gap-3 flex-wrap">
               <SheetClose asChild>
                 <Button
                   variant="outline">

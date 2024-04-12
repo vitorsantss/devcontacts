@@ -78,7 +78,7 @@ const CreateContact = () => {
     <div>
       <Sheet>
         <SheetTrigger asChild>
-          <Button className="flex items-center gap-1 w-32 mr-14 p-5">
+          <Button className="flex items-center gap-1 w-36 p-5">
             <IoIosAddCircleOutline />
             Novo
           </Button>
@@ -167,7 +167,7 @@ const CreateContact = () => {
                 />
               </div>
             </div>
-            <SheetFooter>
+            <SheetFooter className="flex gap-2 flex-wrap">
               <SheetClose asChild>
                 <Button
                   variant="outline">
