@@ -73,7 +73,7 @@ const CardContact = ({ contact }) => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href={`https:\\wa.me/55${contact.telefone}`}>
+              href={`https://wa.me/55${contact.telefone}`}>
               <IoLogoWhatsapp size={25} />
             </a>
 
@@ -81,7 +81,7 @@ const CardContact = ({ contact }) => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href={`https:\\github.com/${contact.github}`}>
+                href={`https://github.com/${contact.github}`}>
                 <FaGithub size={25} />
               </a>
             ) : (
